@@ -1,30 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Raleway:wght@400;700&display=swap');
-
-/*************************** CUSTOM PROPERTIES ********************************/
-
-/**************************** RESET STYLES ************************************/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Raleway:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
+
 p {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
-/********************************** STYLES ************************************/
+.equipo {
+  margin: 30px 0;
+}
+.equipo .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+}
+.equipo .member .teampic {
+  width: 180px;
+}
+.equipo .member .member-info {
+  padding-left: 30px;
+}
+.equipo .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: rgb(255, 165, 0);
+}
+.equipo .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+.equipo .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: black;
+  bottom: 0;
+  left: 0;
+}
+.equipo .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+.equipo .member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.equipo .member .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+.equipo .member .social a i {
+  color: rgb(255, 165, 0);
+  font-size: 16px;
+  margin: 0 2px;
+}
+.equipo .member .social a:hover {
+  background: rgb(255, 165, 0);
+}
+.equipo .member .social a:hover i {
+  color: #fff;
+}
+.equipo .member .social a + a {
+  margin-left: 8px;
+}
 
-/* header */
-
-.header {
+footer {
   width: 100%;
-  height: 100vh !important;
+  padding: 1.25rem 0;
+  background-color: rgb(255, 165, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .logo-footer {
+  height: 4.5rem;
+  margin-bottom: 0.1rem;
+}
+footer .social-icons-container,
+footer .footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.1rem;
+}
+footer .social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #f2f2f2;
+  background-image: url(../assets/FacebookBlanco.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+footer .social-icon:hover {
+  background-color: rgb(46, 46, 78);
+}
+footer .social-icon:nth-of-type(2) {
+  background-image: url(../assets/InstagramBlanco.png);
+}
+footer .social-icon:nth-of-type(3) {
+  background-image: url(../assets/TwitterBlanco.png);
+}
+footer .social-icon:nth-of-type(4) {
+  background-image: url(../assets/LinkedinBlanco.png);
+}
+footer .footer-menu-container {
+  list-style-type: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0;
+}
+footer .footer-menu-container .menu-link {
+  margin: 1rem;
+  cursor: pointer;
+}
+footer .footer-menu-container .menu-link a {
+  color: rgb(46, 46, 78);
+}
+footer .footer-menu-container .menu-link:hover {
+  opacity: 0.4;
+}
+footer .copyright {
+  color: rgb(46, 46, 78);
+  text-align: center;
+  font-weight: bold;
 }
 
 .navbar {
@@ -44,9 +171,8 @@ a {
   font-weight: bold;
   margin-left: 0.5rem;
 }
-
 .nav-link:hover {
-  color: orange;
+  color: rgb(255, 165, 0);
 }
 
 .nav-item {
@@ -57,95 +183,115 @@ a {
   text-decoration: none;
   font-size: 0.9rem;
   padding: 10px 30px;
-  background-color: orange;
+  background-color: rgb(255, 165, 0);
   color: white;
   font-weight: bold;
   border-radius: 30px;
 }
-
 .btn_cta:hover {
-  background-color: rgb(255, 166, 0, 0.75);
+  background-color: rgba(255, 165, 0, 0.75);
 }
-
-/* footer */
-footer {
-  width: 100%;
-  padding: 1.25rem 0;
-  background-color: orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.logo-footer {
-  height: 4.5rem;
-  margin-bottom: 0.1rem;
-}
-
-.social-icons-container,
-.footer-menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 0.1rem;
-}
-
-.social-icon {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  border: 1px solid #f2f2f2;
-  background-image: url(../assets/FacebookBlanco.png);
-  background-position: center;
-  background-size: 40%;
-  background-repeat: no-repeat;
-  margin: 1rem;
-}
-
-.social-icon:hover {
-  background-color: rgba(6, 6, 171, 0.895);
-}
-
-.social-icon:nth-of-type(2) {
-  background-image: url(../assets/InstagramBlanco.png);
-}
-.social-icon:nth-of-type(3) {
-  background-image: url(../assets/TwitterBlanco.png);
-}
-.social-icon:nth-of-type(4) {
-  background-image: url(../assets/LinkedinBlanco.png);
-}
-
-.footer-menu-container {
-  list-style-type: none;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: bold;
-  padding: 0;
-}
-
-.menu-link {
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.menu-link:hover {
-  opacity: 0.75;
-}
-
-.copyright {
-  color: white;
-  text-align: center;
-  font-weight: bold;
-}
-
-/* home page */
 
 .banner-home {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/bannerHome1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.banner-home > .container {
+  text-align: center;
+}
+.banner-home > .container h2,
+.banner-home > .container p {
+  color: white;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.banner-home > .container h2 {
+  font-size: 2rem;
+}
+.banner-home > .container p {
+  font: 1.15rem;
+}
+.banner-home > .container .cta-home {
+  display: inline-block;
+  font-size: 1.35rem;
+  color: white;
+  padding: 16px 32px;
+  background-color: rgb(255, 165, 0);
+  border-radius: 5px;
+  font-weight: bold;
+}
+.banner-home > .container .cta-home:hover {
+  background-color: rgba(255, 165, 0, 0.75);
+}
+
+.servicios-text {
+  padding: 20px;
+}
+.servicios-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.servicios-text p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.servicios-text .container-servicios-cta {
+  text-align: center;
+  margin-top: 45px;
+}
+.servicios-text .servicios-cta {
+  background-color: rgb(255, 165, 0);
+  color: white;
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding: 16px 32px;
+  text-align: center;
+}
+.servicios-text .servicios-cta:hover {
+  background-color: rgba(255, 165, 0, 0.75);
+}
+
+.equipo .container .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.equipo .container .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  color: rgb(255, 165, 0);
+  font-weight: bold;
+}
+.equipo .container-ctaexpertos {
+  text-align: center;
+  margin-top: 20px;
+}
+.equipo .container-ctaexpertos .btn-ctaexpertos {
+  background-color: rgb(255, 165, 0);
+  color: white;
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding: 16px 32px;
+  text-align: center;
+}
+.equipo .container-ctaexpertos .btn-ctaexpertos:hover {
+  background-color: rgba(255, 166, 0, 0.7);
+}
+
+.banner-nosotros {
+  width: 100%;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,14 +300,9 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.banner-home > .container,
 .banner-nosotros > .container {
   text-align: center;
 }
-
-.banner-home h2,
-.banner-home p,
 .banner-nosotros h2,
 .banner-nosotros p {
   color: white;
@@ -169,157 +310,9 @@ footer {
   padding: 0 10px;
 }
 
-.banner-home h2 {
-  font-size: 2rem;
-}
-
-.banner-home p {
-  font: 1.15rem;
-}
-
-.cta-home {
-  display: inline-block;
-  font-size: 1.35rem;
-  color: white;
-  padding: 16px 32px;
-  background-color: orange;
-  border-radius: 5px;
-}
-
-.equipo {
-  margin: 30px 0;
-}
-
-.equipo .member {
-  position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 5px;
-  background: #fff;
-}
-
-.equipo .member .teampic {
-  width: 180px;
-}
-
-.equipo .member .member-info {
-  padding-left: 30px;
-}
-
-.equipo .member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: tomato;
-}
-
-.equipo .member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-
-.equipo .member span::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 2px;
-  background: black;
-  bottom: 0;
-  left: 0;
-}
-
-.equipo .member p {
-  margin: 10px 0 0 0;
-  font-size: 14px;
-}
-
-.equipo .member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.equipo .member .social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: #eff2f8;
-}
-
-.equipo .member .social a i {
-  color: tomato;
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-.equipo .member .social a:hover {
-  background: tomato;
-}
-
-.equipo .member .social a:hover i {
-  color: #fff;
-}
-
-.equipo .member .social a + a {
-  margin-left: 8px;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  position: relative;
-  color: orange;
-  font-weight: bold;
-}
-
-.underline {
-  width: 150px;
-  height: 1px;
-  background-color: black;
-  margin: auto;
-  margin-top: -30px;
-}
-
-.container-ctaexpertos,
-.container-servicios-cta {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.btn-ctaexpertos,
-.servicios-cta {
-  background-color: orange;
-  color: white;
-  font-size: 1.15rem;
-  font-weight: bold;
-  padding: 16px 32px;
-  text-align: center;
-}
-
-.btn-ctaexpertos:hover {
-  background-color: rgba(255, 166, 0, 0.7);
-}
-
-/* nosotros page */
-
-.banner-nosotros {
+.banner-servicios {
   width: 100%;
-  height: 30%;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,30 +321,65 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.banner-servicios > .container {
+  text-align: center;
+}
+.banner-servicios h2,
+.banner-servicios p {
+  color: white;
+  font-weight: bold;
+  padding: 0 10px;
+}
 
-/* recursos page */
+.contenedor {
+  text-align: center;
+  margin: 0 auto;
+}
 
-/******************************* form page *************************************/
+iframe {
+  width: 70vw;
+  height: 50vh;
+}
+
 .formulario {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.2rem;
   color: white;
   margin: 0;
-  background-image: linear-gradient(
-      115deg,
-      rgba(58, 58, 158, 0.8),
-      rgba(136, 136, 206, 0.7)
-    ),
-    url(/assets/bannerHome.jpg);
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(/assets/bannerHome.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.wraper {
+.formulario .wraper {
   max-width: 720px;
   margin: 0 auto;
   padding: 50px 20px;
+}
+.formulario select input,
+.formulario .one input {
+  display: block;
+  width: 100%;
+  height: 2rem;
+}
+.formulario form {
+  background-color: rgba(27, 27, 50, 0.8);
+  padding: 40px 40px;
+  border-radius: 5px;
+}
+.formulario .two label {
+  display: block;
+}
+.formulario .button-form {
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(255, 165, 0);
+  border: 0px solid rgb(255, 165, 0);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 #title,
@@ -365,21 +393,8 @@ footer {
   font-weight: 200;
 }
 
-form {
-  background-color: rgba(27, 27, 50, 0.8);
-  padding: 40px 40px;
-  border-radius: 5px;
-}
-
 div {
   padding: 12px 0;
-}
-
-select,
-.one input {
-  display: block;
-  width: 100%;
-  height: 2rem;
 }
 
 label > span {
@@ -390,24 +405,8 @@ label > span {
   display: inline;
 }
 
-.two label {
-  display: block;
-}
-
 .area {
   min-height: 120px;
-}
-
-.button-form {
-  display: inline-block;
-  width: 100%;
-  background-color: green;
-  border: 0px solid green;
-  color: white;
-  font-size: 1rem;
-  padding: 8px 0;
-  border-radius: 5px;
-  margin-top: 10px;
 }
 
 .maps {
@@ -415,35 +414,11 @@ label > span {
   padding: 20px 20px;
 }
 
-/* recursos page */
-
-.contenedor {
-  text-align: center;
-  margin: 0 auto;
-}
-
-iframe {
-  width: 70vw;
-  height: 50vh;
-}
-
 /*  X-Small devices (portrait phones, less than 576px) No media query for `xs` since this is the default in Bootstrap */
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
-
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-}
+
+/*# sourceMappingURL=styles.css.map */

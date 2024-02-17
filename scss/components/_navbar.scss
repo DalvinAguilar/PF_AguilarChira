@@ -1,0 +1,41 @@
+.navbar {
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 1px 20px gray;
+}
+
+.navbar-brand {
+  img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  color: $text-primary-color;
+  font-weight: bold;
+  margin-left: 0.5rem;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.nav-item {
+  margin: 0 5px;
+}
+
+.btn_cta {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 10px 30px;
+  background-color: $primary-color;
+  color: $text-secundary-color;
+  font-weight: bold;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: $alpha-primary-color;
+  }
+}
