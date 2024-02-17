@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>Contactanos PsicoSalud</title>
+</head>
+
+<body>
+  <!-- seccion header -->
+  <header class="sticky-top">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <!-- navbar logo -->
+        <a class="navbar-brand" href="#"><img src="../assets/logo.png" alt="logo psicosalud" /></a>
+        <!-- navbar logo -->
+        <!-- navbar menu hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar menu hamburguesa -->
+        <!-- navbar enlaces -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="recursos.html">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactanos.html">Contactanos</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a href="contactanos.html" class="btn_cta">Agenda tu cita</a>
+            </li>
+          </ul>
+          <!-- navbar enlaces -->
+    </nav>
+  </header>
+  <!-- seccion header -->
+  <!-- main seccion -->
+  <main class="formulario">
+    <section class="wraper">
+
+      <div class="one">
+        <h1 id="title">Agenda una cita</h1>
+        <p id="description">Nuestros especialistas estan listos para ayudarte</p>
+      </div>
+
+      <form id="" action="">
+        <div class="one">
+          <label for="name">Nombre completo</label>
+          <input type="text" name="name" id="name" placeholder="Coloca tu nombre">
+        </div>
+
+        <div class="one">
+          <label for="email">Correo</label>
+          <input type="email" name="email" id="email" placeholder="Ingresa tu correo">
+        </div>
+
+        <div class="one">
+          <label for="cel">Celular</label>
+          <input type="number" name="cel" id="cel" placeholder="Ingresa tu celular">
+        </div>
+
+        <div class="one">
+          <label for="numer">Edad</label>
+          <input type="number" name="number" id="number" placeholder="Ingresa tu edad">
+        </div>
+
+        <div>
+          <p>Que servicio necesitas?</p>
+          <select>
+            <option value="" disabled selected>Elige una de nuestras terapias</option>
+            <option value="">Terapia personal</option>
+            <option value="">Terapia infantil</option>
+            <option value="">Terapia de Pareja</option>
+            <option value="">Otro servicio</option>
+          </select>
+        </div>
+
+        <div class="two">
+          <p>Crees que sufres de algunos de estos problemas?<span> (Puedes seleccionar varios)</span></p>
+          <label><input name="prefer" type="checkbox" value=""> Ansiedad</label>
+          <label><input name="prefer" type="checkbox" value=""> Depresion</label>
+          <label><input name="prefer" type="checkbox" value=""> Dificultad para socializar</label>
+          <label><input name="prefer" type="checkbox" value=""> Problemas de concentracion</label>
+          <label><input name="prefer" type="checkbox" value=""> Problemas familiares</label>
+          <label><input name="prefer" type="checkbox" value=""> Adiccion</label>
+        </div>
+
+        <div class="one">
+          <p>Explicanos tu caso, un especializaste lo evaluara antes de contactarte?</p>
+          <input class="cuadro-resumen" name="suggestion" typed="text-area" placeholder="Nos importa como te sientes...">
+        </div>
+        <button class="button-form" type="submit">Enviar</button>
+      </form>
+
+    </section>
+    <section class="ubicanos">
+      <h1 id="title">Tambien puedes acercarte a nuestra sede</h1>
+      <p id="description">Jr. No te importa 666</p>
+      <div class="maps container" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.7185034963636!2d-77.01263372458867!3d-11.993969640920634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c50034f73047%3A0xd2723d6c4d474863!2sChupalandia!5e0!3m2!1ses-419!2spe!4v1706935142321!5m2!1ses-419!2spe" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- main seccion -->
+    <!-- footer -->
+    <footer>
+      <img src="../assets/logo.png" alt="logo psicosaludo" class="logo-footer">
+      <div class="social-icons-container">
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+      </div>
+      <ul class="footer-menu-container">
+        <li class="menu-link"><a href="../index.html">INICIO</a></li>
+        <li class="menu-link"><a href="nosotros.html">NOSOTROS</a></li>
+        <li class="menu-link"><a href="servicios.html">SERVICIOS</a></li>
+        <li class="menu-link"><a href="recursos.html">RECURSOS</a></li>
+        <li class="menu-link"><a href="contactanos.html">CONTACTANOS</a></li>
+    </ul>
+      <span class="copyright">&copy;2024, Dalvin Aguilar. Todos los derechos reservados.</span>
+    </footer>
+    <!-- footer -->
+
+
+    <!-- seccion header -->
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
