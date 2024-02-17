@@ -1,19 +1,13 @@
 .banner-servicios {
-  width: 100%;
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(column, center, center);
   background-image: url(../assets/bannerHome1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @extend .img-banners;
 
   > .container {
     text-align: center;
   }
 
-  h2,
+  h1,
   p {
     color: $text-secundary-color;
     font-weight: bold;
