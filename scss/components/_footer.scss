@@ -8,7 +8,7 @@ footer {
   flex-direction: column;
 
   .logo-footer {
-    height: 4.5rem;
+    height: 3.5rem;
     margin-bottom: 0.1rem;
   }
 
@@ -22,11 +22,11 @@ footer {
   }
 
   .social-icon {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     border-radius: 50px;
     border: 1px solid #f2f2f2;
-    background-image: url(../assets/FacebookBlanco.png);
+    background-image: url(../assets/iconFacebook.png);
     background-position: center;
     background-size: 40%;
     background-repeat: no-repeat;
@@ -37,20 +37,20 @@ footer {
     }
 
     &:nth-of-type(2) {
-      background-image: url(../assets/InstagramBlanco.png);
+      background-image: url(../assets/iconInstagram.png);
     }
     &:nth-of-type(3) {
-      background-image: url(../assets/TwitterBlanco.png);
+      background-image: url(../assets/iconTwitter.png);
     }
     &:nth-of-type(4) {
-      background-image: url(../assets/LinkedinBlanco.png);
+      background-image: url(../assets/iconLinkedin.png);
     }
   }
 
   .footer-menu-container {
     list-style-type: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     font-weight: bold;
     padding: 0;
 
@@ -72,5 +72,6 @@ footer {
     color: $secundary-color;
     text-align: center;
     font-weight: bold;
+    font-size: 0.6rem;
   }
 }

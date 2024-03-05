@@ -57,75 +57,76 @@
   <!-- seccion header -->
   <!-- main seccion -->
   <main class="formulario">
-    <section class="wraper">
-
-      <div class="one">
-        <h1 id="title">Agenda tu cita</h1>
-        <p id="description">Nuestros especialistas estan listos para ayudarte</p>
-      </div>
-
-      <form id="" action="">
-        <div class="one">
-          <label for="name">Nombre completo</label>
-          <input type="text" name="name" id="name" placeholder="Coloca tu nombre">
-        </div>
+      <section class="wraper">
 
         <div class="one">
-          <label for="email">Correo</label>
-          <input type="email" name="email" id="email" placeholder="Ingresa tu correo">
-        </div>
+          <h1 id="title">Agenda tu cita</h1>
+          <p id="description">Nuestros especialistas estan listos para ayudarte</p>
+         </div>
 
-        <div class="one">
-          <label for="cel">Celular</label>
-          <input type="number" name="cel" id="cel" placeholder="Ingresa tu celular">
-        </div>
+        <form id="form_contact" action="">
+          <div class="one">
+            <label for="name">Nombre completo</label>
+            <input type="text" name="name" id="name" placeholder="Coloca tu nombre">
+           </div>
 
-        <div class="one">
-          <label for="numer">Edad</label>
-          <input type="number" name="number" id="number" placeholder="Ingresa tu edad">
-        </div>
+         <div class="one">
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email" placeholder="Ingresa tu correo">
+          </div>
 
-        <div>
-          <p>Que servicio necesitas?</p>
-          <select>
-            <option value="" disabled selected>Elige una de nuestras terapias</option>
-            <option value="">Terapia personal</option>
-            <option value="">Terapia infantil</option>
-            <option value="">Terapia de Pareja</option>
-            <option value="">Otro servicio</option>
-          </select>
-        </div>
+          <div class="one">
+            <label for="cel">Celular</label>
+            <input type="number" name="cel" id="cel" placeholder="Ingresa tu celular">
+          </div>
 
-        <div class="two">
-          <p>Crees que sufres de algunos de estos problemas?<span> (Puedes seleccionar varios)</span></p>
-          <label><input name="prefer" type="checkbox" value=""> Ansiedad</label>
-          <label><input name="prefer" type="checkbox" value=""> Depresion</label>
-          <label><input name="prefer" type="checkbox" value=""> Dificultad para socializar</label>
-          <label><input name="prefer" type="checkbox" value=""> Problemas de concentracion</label>
-          <label><input name="prefer" type="checkbox" value=""> Problemas familiares</label>
-          <label><input name="prefer" type="checkbox" value=""> Adiccion</label>
-        </div>
+          <div class="one">
+            <label for="numer">Edad</label>
+            <input type="number" name="number" id="number" placeholder="Ingresa tu edad">
+          </div>
 
-        <div class="one">
-          <p>Explicanos tu caso, un especializaste lo evaluara antes de contactarte?</p>
-          <input class="cuadro-resumen" name="suggestion" typed="text-area" placeholder="Nos importa como te sientes...">
-        </div>
-        <button class="button-form" type="submit">Enviar</button>
-      </form>
+          <div>
+            <p>Que servicio necesitas?</p>
+           <select>
+              <option value="" disabled selected>Elige una de nuestras terapias</option>
+              <option value="teparia-personal">Terapia personal</option>
+              <option value="terapia-infantil">Terapia infantil</option>
+              <option value="terapia-pareja">Terapia de Pareja</option>
+              <option value="otro-servicio">Otro servicio</option>
+            </select>
+          </div>
 
-    </section>
-    <section class="ubicanos">
-      <h2 id="title">Tambien puedes acercarte a nuestra sede</h2>
-      <p id="description">Jr. No te importa 666</p>
-      <div class="maps container" >
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.7185034963636!2d-77.01263372458867!3d-11.993969640920634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c50034f73047%3A0xd2723d6c4d474863!2sChupalandia!5e0!3m2!1ses-419!2spe!4v1706935142321!5m2!1ses-419!2spe" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </section>
+          <div class="two">
+            <p>Crees que sufres de algunos de estos problemas?<span> (Puedes seleccionar varios)</span></p>
+            <label><input name="prefer" type="checkbox" value="ansiedad"> Ansiedad</label>
+            <label><input name="prefer" type="checkbox" value="depresion"> Depresion</label>
+            <label><input name="prefer" type="checkbox" value="dificultad-socializar"> Dificultad para socializar</label>
+            <label><input name="prefer" type="checkbox" value="problemas-concentracion"> Problemas de concentracion</label>
+            <label><input name="prefer" type="checkbox" value="problemas-familiares"> Problemas familiares</label>
+            <label><input name="prefer" type="checkbox" value="adiccion"> Adiccion</label>
+          </div>
+
+          <div class="one">
+            <p>Explicanos tu caso, un especializaste lo evaluara antes de contactarte?</p>
+            <input class="cuadro-resumen" name="suggestion" typed="text-area" placeholder="Nos importa como te sientes...">
+          </div>
+          <button class="button-form" type="submit">Enviar</button>
+        </form>
+
+      </section>
+      <section class="ubicanos">
+        <h2 id="title">Tambien puedes acercarte a nuestra sede</h2>
+        <p id="description">Jr. No te importa 666</p>
+        <div class="maps container" >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.7185034963636!2d-77.01263372458867!3d-11.993969640920634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c50034f73047%3A0xd2723d6c4d474863!2sChupalandia!5e0!3m2!1ses-419!2spe!4v1706935142321!5m2!1ses-419!2spe" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+  </main>
 
     <!-- main seccion -->
     <!-- footer -->
     <footer>
-      <img src="../assets/logo.png" alt="logo psicosaludo" class="Logo PsicoSalud Peru footer">
+      <img src="../assets/logo.png" alt="logo psicosaludo" class="logo-footer">
       <div class="social-icons-container">
         <a href="" class="social-icon"></a>
         <a href="" class="social-icon"></a>

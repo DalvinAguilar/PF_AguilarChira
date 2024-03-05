@@ -105,7 +105,7 @@ footer {
   flex-direction: column;
 }
 footer .logo-footer {
-  height: 4.5rem;
+  height: 3.5rem;
   margin-bottom: 0.1rem;
 }
 footer .social-icons-container,
@@ -117,11 +117,11 @@ footer .footer-menu-container {
   margin-bottom: 0.1rem;
 }
 footer .social-icon {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   border-radius: 50px;
   border: 1px solid #f2f2f2;
-  background-image: url(../assets/FacebookBlanco.png);
+  background-image: url(../assets/iconFacebook.png);
   background-position: center;
   background-size: 40%;
   background-repeat: no-repeat;
@@ -131,18 +131,18 @@ footer .social-icon:hover {
   background-color: rgb(46, 46, 78);
 }
 footer .social-icon:nth-of-type(2) {
-  background-image: url(../assets/InstagramBlanco.png);
+  background-image: url(../assets/iconInstagram.png);
 }
 footer .social-icon:nth-of-type(3) {
-  background-image: url(../assets/TwitterBlanco.png);
+  background-image: url(../assets/iconTwitter.png);
 }
 footer .social-icon:nth-of-type(4) {
-  background-image: url(../assets/LinkedinBlanco.png);
+  background-image: url(../assets/iconLinkedin.png);
 }
 footer .footer-menu-container {
   list-style-type: none;
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   font-weight: bold;
   padding: 0;
 }
@@ -160,6 +160,7 @@ footer .copyright {
   color: rgb(46, 46, 78);
   text-align: center;
   font-weight: bold;
+  font-size: 0.6rem;
 }
 
 .navbar {
@@ -169,7 +170,7 @@ footer .copyright {
 }
 
 .navbar-brand img {
-  width: 250px;
+  width: 200px;
   height: auto;
 }
 
@@ -206,7 +207,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/bannerHome1.jpg);
+  background-image: url(../assets/bannerPages.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -255,14 +256,14 @@ footer .copyright {
 }
 .servicios-text .container-servicios-cta {
   text-align: center;
-  margin-top: 45px;
+  margin-top: 30px;
 }
 .servicios-text .servicios-cta {
   background-color: rgb(255, 165, 0);
   color: white;
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 16px 32px;
+  padding: 8px 16px;
   text-align: center;
   transition: all 500ms;
 }
@@ -275,7 +276,7 @@ footer .copyright {
   padding-bottom: 30px;
 }
 .equipo .container .section-title h2 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -291,9 +292,9 @@ footer .copyright {
 .equipo .container-ctaexpertos .btn-ctaexpertos {
   background-color: rgb(255, 165, 0);
   color: white;
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 16px 32px;
+  padding: 8px 16px;
   text-align: center;
   transition: all 500ms;
 }
@@ -306,7 +307,7 @@ footer .copyright {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/bannerHome1.jpg);
+  background-image: url(../assets/bannerPages.jpg);
 }
 .banner-nosotros > .container {
   text-align: center;
@@ -323,7 +324,7 @@ footer .copyright {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/bannerHome1.jpg);
+  background-image: url(../assets/bannerPages.jpg);
 }
 .banner-servicios > .container {
   text-align: center;
@@ -340,7 +341,7 @@ footer .copyright {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/bannerHome1.jpg);
+  background-image: url(../assets/bannerPages.jpg);
 }
 .banner-recursos > .container {
   text-align: center;
@@ -363,7 +364,7 @@ iframe {
 }
 
 .formulario {
-  font-size: 1.2rem;
+  font-size: 0.6rem;
   color: white;
   margin: 0;
   background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(/assets/bannerHome.jpg);
@@ -409,9 +410,12 @@ iframe {
   text-align: center;
 }
 
+#title {
+  font-size: 1rem;
+}
+
 #description {
   font-style: italic;
-  font-weight: 200;
 }
 
 div {
@@ -437,8 +441,24 @@ label > span {
 
 /*  X-Small devices (portrait phones, less than 576px) No media query for `xs` since this is the default in Bootstrap */
 /* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .formulario {
+    font-size: 1rem;
+  }
+  #title {
+    font-size: 2rem;
+  }
+}
 /* // Medium devices (tablets, 768px and up) */
 /* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .equipo .container-ctaexpertos .btn-ctaexpertos {
+    font-size: 1.2rem;
+  }
+  .formulario {
+    font-size: 1rem;
+  }
+}
 /* // X-Large devices (large desktops, 1200px and up) */
 /* // XX-Large devices (larger desktops, 1400px and up) */
 

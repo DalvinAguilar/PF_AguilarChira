@@ -1,6 +1,6 @@
 .banner-servicios {
   @include flex(column, center, center);
-  background-image: url(../assets/bannerHome1.jpg);
+  background-image: url(../assets/bannerPages.jpg);
   @extend .img-banners;
 
   > .container {

@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/bannerHome1.jpg);
+  background-image: url(../assets/bannerPages.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,15 +61,15 @@
 
   .container-servicios-cta {
     text-align: center;
-    margin-top: 45px;
+    margin-top: 30px;
   }
 
   .servicios-cta {
     background-color: $primary-color;
     color: white;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: bold;
-    padding: 16px 32px;
+    padding: 8px 16px;
     text-align: center;
     transition: all 500ms;
 
@@ -86,7 +86,7 @@
       padding-bottom: 30px;
 
       h2 {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 10px;
@@ -105,9 +105,9 @@
     .btn-ctaexpertos {
       background-color: $primary-color;
       color: white;
-      font-size: 1.15rem;
+      font-size: 1rem;
       font-weight: bold;
-      padding: 16px 32px;
+      padding: 8px 16px;
       text-align: center;
       transition: all 500ms;
 
